@@ -1,4 +1,56 @@
-h1{
-	color: green;
-	text-align:center;
+body {
+	background-image: url("https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	color: rgb(238, 227, 227);
+}
+
+form {
+	width: 100%;
+}
+
+input[type=text],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+	width: 30%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+}
+
+textarea {
+	height: 160px;
+}
+
+
+button {
+	width: 30%;
+	background-color: #4caf50;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 7px 0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+label {
+	font-size: 1.3rem;
+	text-transform: capitalize;
+}
+
+.selectors {
+	display: flexbox;
+	justify-content: left;
 }
