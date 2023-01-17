@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<h1 id="title">Survey</h1>
+		<p id="description">
+			Thank you for taking time to help us to improve the platform
+		</p>
+		<form id="survey-form">
+			<label id="name-label" for="name">Name</label> <br>
+			<input id="name" type="text" name="name" placeholder="Enter your name here" required /> <br>
+			<label id="email-label" for="email">e-mail</label><br>
+			<input id="email" required type="email" name="email" placeholder="Enter your e-mail here" /><br>
+			<label id="number-label" for="number">Phone number</label><br>
+			<input id="number" type="number" min="10" max="10" name="number"
+				placeholder="Enter your phone number here" /><br>
+			<label for="student">Which option best describes your current role?</label> <br>
+			<select id="dropdown">
+				<option value="">Select Prefer Role</option>
+				<option value="student">student</option>
+				<option value="part-time employee">part-time employee</option>
+				<option value="full-time employee">full-time employee"</option>
+			</select><br>
+			<div class="selectors">
+				<input type="radio" name="recommend" value="Yes" />
+				<label for="yes"> Yes </label> <br>
+				<input type="radio" name="recommend" value="No" />
+				<label for="no"> No</label> <br>
+				<br />
+				<input type="checkbox" name="front-end" value="front-end project" />
+				<label for="front-end"> Front-end Project</label><br>
+				<input type="checkbox" name="back-end" value="back-end project" />
+				<label for="back-end"> Back-end Project</label><br>
+				<input type="checkbox" value="Data analyst" />
+				<label for="data-analyst"> Data Analyst</label><br>
+				<input type="checkbox" name="open-source" value="Open source challenge" />
+				<label for="open-source"> Open Source Challenge</label><br>
+				<input type="checkbox" value="Video editing" />
+				<label for="video-editing"> Video Editing</label><br>
+				<input type="checkbox" name="ui-ux" value="UI/UX project" />
+				<label for="ui-ux"> UI/UX Project</label>
+			</div>
+			<br />
+			<!--<textarea placeholder="Add any ectra comments" cols="10">
+				
+			</textarea><br>-->
+			<textarea placeholder="Add any ectra comments" cols="30"></textarea><br>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+
+</html>
